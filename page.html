@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lading Page Sederhana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">LadingPage.</div>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="beranda">
+    <h1>Website Keren untuk Bisnismu 🚀</h1>
+    <p>Kami bantu kamu punya website yang tampil profesional dan mobile-friendly tanpa ribet.</p>
+    <a href="#kontak"><button class="btn-primary">Minta Penawaran</button></a>
+  </section>
+
+  <section id="layanan" class="section layanan">
+    <h2 class="section-title">Layanan Kami</h2>
+    <div class="layanan-container">
+      <div class="layanan-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Membuat website modern, cepat, dan responsif sesuai kebutuhan kamu.</p>
+      </div>
+      <div class="layanan-card">
+        <i class="fa-solid fa-laptop"></i>
+        <h3>Landing Page</h3>
+        <p>Desain landing page yang profesional untuk personal atau bisnis.</p>
+      </div>
+      <div class="layanan-card">
+        <i class="fa-solid fa-mobile-alt"></i>
+        <h3>Mobile Friendly</h3>
+        <p>Tampilan optimal di semua perangkat, dari desktop sampai HP.</p>
+      </div>
+    </div>
+  </section> 
+  
+  <section id="testimoni" class="section testimoni">
+    <h2 class="section-title">Kata Mereka</h2>
+    <div class="testimoni-container">
+      <div class="testimoni-card">
+        <img src="https://ui-avatars.com/api/?name=Rina&background=00bcd4&color=fff" alt="Rina" class="avatar">
+        <p>"Website-nya cepet jadi, tampilannya juga keren! Cocok buat bisnis kecil kayak saya."</p>
+        <h4>– Rina, Pemilik Toko Online</h4>
+      </div>
+      <div class="testimoni-card">
+        <img src="https://ui-avatars.com/api/?name=Budi&background=00bcd4&color=fff" alt="Budi" class="avatar">
+        <p>"Sahrul bantu banget waktu saya butuh landing page untuk portfolio freelance."</p>
+        <h4>– Budi, Freelancer</h4>
+      </div>
+      <div class="testimoni-card">
+        <img src="https://ui-avatars.com/api/?name=Sinta&background=00bcd4&color=fff" alt="Sinta" class="avatar">
+        <p>"Responsive dan tampilannya clean banget. Gak nyangka hasilnya seprofesional itu."</p>
+        <h4>– Sinta, UMKM Owner</h4>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="kontak">
+    <h2>Hubungi Saya</h2>
+    <p class="kontak-subtext">Tertarik kerja bareng, kolaborasi, atau sekadar ngobrol santai? Kirim pesan lewat salah satu platform di bawah ya!</p>
+    
+    <div class="kontak-card-container">
+      <div class="kontak-card">
+        <i class="fas fa-envelope"></i>
+        <p><a href="mailto:sahrul@example.com">sahrul@example.com</a></p>
+      </div>
+      <div class="kontak-card">
+        <i class="fab fa-github"></i>
+        <p><a href="https://github.com/sahrulgunawan" target="_blank">github.com/sahrulgunawan</a></p>
+      </div>
+      <div class="kontak-card">
+        <i class="fab fa-linkedin"></i>
+        <p><a href="https://linkedin.com/in/sahrulgunawan" target="_blank">linkedin.com/in/sahrulgunawan</a></p>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 Sahrul Gunawan. All rights reserved.</p>
+    </div>
+  </footer>  
+
+  <script>
+    const animItems = document.querySelectorAll('[data-animate]');
+    window.addEventListener('scroll', () => {
+      animItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (itemTop < windowHeight - 100) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+  
+
+</body>
+</html>
